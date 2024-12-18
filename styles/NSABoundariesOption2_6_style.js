@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_NSABoundaries_6 = function(feature, resolution){
+var style_NSABoundariesOption2_6 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
