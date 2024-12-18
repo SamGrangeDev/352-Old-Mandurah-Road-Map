@@ -97,69 +97,50 @@ var lyr_NSABoundaries_6 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/NSABoundaries_6.png" /> NSA Boundaries'
             });
-var format_352easement_7 = new ol.format.GeoJSON();
-var features_352easement_7 = format_352easement_7.readFeatures(json_352easement_7, 
+var format_NSABoundaries_7 = new ol.format.GeoJSON();
+var features_NSABoundaries_7 = format_NSABoundaries_7.readFeatures(json_NSABoundaries_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:7850'});
-var jsonSource_352easement_7 = new ol.source.Vector({
+var jsonSource_NSABoundaries_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_352easement_7.addFeatures(features_352easement_7);
-var lyr_352easement_7 = new ol.layer.Vector({
+jsonSource_NSABoundaries_7.addFeatures(features_NSABoundaries_7);
+var lyr_NSABoundaries_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_352easement_7, 
-                style: style_352easement_7,
-                popuplayertitle: '352 easement',
+                source:jsonSource_NSABoundaries_7, 
+                style: style_NSABoundaries_7,
+                popuplayertitle: 'NSA Boundaries',
                 interactive: false,
-                title: '<img src="styles/legend/352easement_7.png" /> 352 easement'
+                title: '<img src="styles/legend/NSABoundaries_7.png" /> NSA Boundaries'
             });
-var format_PlanningFrameworkLanduse_8 = new ol.format.GeoJSON();
-var features_PlanningFrameworkLanduse_8 = format_PlanningFrameworkLanduse_8.readFeatures(json_PlanningFrameworkLanduse_8, 
+var format_352OldMandurahRoadRavenswood_8 = new ol.format.GeoJSON();
+var features_352OldMandurahRoadRavenswood_8 = format_352OldMandurahRoadRavenswood_8.readFeatures(json_352OldMandurahRoadRavenswood_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:7850'});
-var jsonSource_PlanningFrameworkLanduse_8 = new ol.source.Vector({
+var jsonSource_352OldMandurahRoadRavenswood_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PlanningFrameworkLanduse_8.addFeatures(features_PlanningFrameworkLanduse_8);
-var lyr_PlanningFrameworkLanduse_8 = new ol.layer.Vector({
+jsonSource_352OldMandurahRoadRavenswood_8.addFeatures(features_352OldMandurahRoadRavenswood_8);
+var lyr_352OldMandurahRoadRavenswood_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PlanningFrameworkLanduse_8, 
-                style: style_PlanningFrameworkLanduse_8,
-                popuplayertitle: 'Planning Framework Land use',
-                interactive: false,
-    title: 'Planning Framework Land use<br />\
-    <img src="styles/legend/PlanningFrameworkLanduse_8_0.png" /> Future Urban<br />\
-    <img src="styles/legend/PlanningFrameworkLanduse_8_1.png" /> Open Space<br />\
-    <img src="styles/legend/PlanningFrameworkLanduse_8_2.png" /> Urban<br />\
-    <img src="styles/legend/PlanningFrameworkLanduse_8_3.png" /> Urban Deferred<br />'
-        });
-var format_352OldMandurahRoadRavenswood_9 = new ol.format.GeoJSON();
-var features_352OldMandurahRoadRavenswood_9 = format_352OldMandurahRoadRavenswood_9.readFeatures(json_352OldMandurahRoadRavenswood_9, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:7850'});
-var jsonSource_352OldMandurahRoadRavenswood_9 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_352OldMandurahRoadRavenswood_9.addFeatures(features_352OldMandurahRoadRavenswood_9);
-var lyr_352OldMandurahRoadRavenswood_9 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_352OldMandurahRoadRavenswood_9, 
-                style: style_352OldMandurahRoadRavenswood_9,
+                source:jsonSource_352OldMandurahRoadRavenswood_8, 
+                style: style_352OldMandurahRoadRavenswood_8,
                 popuplayertitle: '352 Old Mandurah Road, Ravenswood',
                 interactive: false,
-                title: '<img src="styles/legend/352OldMandurahRoadRavenswood_9.png" /> 352 Old Mandurah Road, Ravenswood'
+                title: '<img src="styles/legend/352OldMandurahRoadRavenswood_8.png" /> 352 Old Mandurah Road, Ravenswood'
             });
 var group_Propertry = new ol.layer.Group({
-                                layers: [lyr_352OldMandurahRoadRavenswood_9,],
+                                layers: [lyr_352OldMandurahRoadRavenswood_8,],
                                 fold: "open",
                                 title: 'Propertry'});
 var group_Zoning = new ol.layer.Group({
-                                layers: [lyr_PlanningFrameworkLanduse_8,],
+                                layers: [],
                                 fold: "open",
                                 title: 'Zoning'});
 var group_Easements = new ol.layer.Group({
-                                layers: [lyr_352easement_7,],
+                                layers: [],
                                 fold: "open",
                                 title: 'Easements'});
 var group_ConceptPlanOptions = new ol.layer.Group({
-                                layers: [lyr_RegionalOpenSpace_4,lyr_OpenSpace_5,lyr_NSABoundaries_6,],
+                                layers: [lyr_RegionalOpenSpace_4,lyr_OpenSpace_5,lyr_NSABoundaries_6,lyr_NSABoundaries_7,],
                                 fold: "open",
                                 title: 'Concept Plan Options'});
 var group_ConceptPlan = new ol.layer.Group({
@@ -171,26 +152,23 @@ var group_BaseLayer = new ol.layer.Group({
                                 fold: "open",
                                 title: 'Base Layer'});
 
-lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_352OldMandurahRoad_2.setVisible(true);lyr_ConceptPlan_3.setVisible(true);lyr_RegionalOpenSpace_4.setVisible(false);lyr_OpenSpace_5.setVisible(false);lyr_NSABoundaries_6.setVisible(false);lyr_352easement_7.setVisible(false);lyr_PlanningFrameworkLanduse_8.setVisible(false);lyr_352OldMandurahRoadRavenswood_9.setVisible(true);
-var layersList = [group_BaseLayer,group_ConceptPlan,group_ConceptPlanOptions,group_Easements,group_Zoning,group_Propertry];
+lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_352OldMandurahRoad_2.setVisible(true);lyr_ConceptPlan_3.setVisible(true);lyr_RegionalOpenSpace_4.setVisible(false);lyr_OpenSpace_5.setVisible(false);lyr_NSABoundaries_6.setVisible(false);lyr_NSABoundaries_7.setVisible(false);lyr_352OldMandurahRoadRavenswood_8.setVisible(true);
+var layersList = [group_BaseLayer,group_ConceptPlan,group_ConceptPlanOptions,group_Propertry];
 lyr_RegionalOpenSpace_4.set('fieldAliases', {'id': 'id', });
 lyr_OpenSpace_5.set('fieldAliases', {'id': 'id', });
 lyr_NSABoundaries_6.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'NSA': 'NSA', 'sum': 'sum', });
-lyr_352easement_7.set('fieldAliases', {'id': 'id', });
-lyr_PlanningFrameworkLanduse_8.set('fieldAliases', {'Land Use': 'Land Use', });
-lyr_352OldMandurahRoadRavenswood_9.set('fieldAliases', {'fid': 'fid', 'Unique ID': 'Unique ID', 'Lot Plan Identifier': 'Lot Plan Identifier', '_Suburb': '_Suburb', 'PARCEL': 'PARCEL', 'Address': 'Address', 'Zoned / Rezone': 'Zoned / Rezone', 'Current Zone': 'Current Zone', 'Strategy': 'Strategy', 'Strategy Link': 'Strategy Link', 'Overlays': 'Overlays', 'Gross HA': 'Gross HA', 'NDH': 'NDH', 'Lot Yield @ 15Dw/Ha': 'Lot Yield @ 15Dw/Ha', 'VALUE @ 467m2': 'VALUE @ 467m2', 'Market Value (20%DM)': 'Market Value (20%DM)', 'Current RLP': 'Current RLP', 'Current OPC': 'Current OPC', 'Market Value (30%DM)': 'Market Value (30%DM)', 'Market Value (25%DM)': 'Market Value (25%DM)', 'Market Value (15%DM)': 'Market Value (15%DM)', 'Market Value (12%DM)': 'Market Value (12%DM)', 'Market Value (10%DM)': 'Market Value (10%DM)', 'OWNERSHIP': 'OWNERSHIP', 'Estate Status': 'Estate Status', 'Developer': 'Developer', 'Vendor Company': 'Vendor Company', 'Vendor Names': 'Vendor Names', 'Vendor Mobiles': 'Vendor Mobiles', 'Vendor Emails': 'Vendor Emails', 'Vendor Addresses': 'Vendor Addresses', 'Major Landowner': 'Major Landowner', 'Lead Link': 'Lead Link', });
+lyr_NSABoundaries_7.set('fieldAliases', {'id': 'id', 'NSA': 'NSA', 'sum': 'sum', });
+lyr_352OldMandurahRoadRavenswood_8.set('fieldAliases', {'fid': 'fid', 'Unique ID': 'Unique ID', 'Lot Plan Identifier': 'Lot Plan Identifier', '_Suburb': '_Suburb', 'PARCEL': 'PARCEL', 'Address': 'Address', 'Zoned / Rezone': 'Zoned / Rezone', 'Current Zone': 'Current Zone', 'Strategy': 'Strategy', 'Strategy Link': 'Strategy Link', 'Overlays': 'Overlays', 'Gross HA': 'Gross HA', 'NDH': 'NDH', 'Lot Yield @ 15Dw/Ha': 'Lot Yield @ 15Dw/Ha', 'VALUE @ 467m2': 'VALUE @ 467m2', 'Market Value (20%DM)': 'Market Value (20%DM)', 'Current RLP': 'Current RLP', 'Current OPC': 'Current OPC', 'Market Value (30%DM)': 'Market Value (30%DM)', 'Market Value (25%DM)': 'Market Value (25%DM)', 'Market Value (15%DM)': 'Market Value (15%DM)', 'Market Value (12%DM)': 'Market Value (12%DM)', 'Market Value (10%DM)': 'Market Value (10%DM)', 'OWNERSHIP': 'OWNERSHIP', 'Estate Status': 'Estate Status', 'Developer': 'Developer', 'Vendor Company': 'Vendor Company', 'Vendor Names': 'Vendor Names', 'Vendor Mobiles': 'Vendor Mobiles', 'Vendor Emails': 'Vendor Emails', 'Vendor Addresses': 'Vendor Addresses', 'Major Landowner': 'Major Landowner', 'Lead Link': 'Lead Link', });
 lyr_RegionalOpenSpace_4.set('fieldImages', {'id': 'TextEdit', });
 lyr_OpenSpace_5.set('fieldImages', {'id': 'TextEdit', });
 lyr_NSABoundaries_6.set('fieldImages', {'fid': '', 'id': '', 'NSA': '', 'sum': '', });
-lyr_352easement_7.set('fieldImages', {'id': '', });
-lyr_PlanningFrameworkLanduse_8.set('fieldImages', {'Land Use': 'TextEdit', });
-lyr_352OldMandurahRoadRavenswood_9.set('fieldImages', {'fid': '', 'Unique ID': '', 'Lot Plan Identifier': '', '_Suburb': '', 'PARCEL': '', 'Address': '', 'Zoned / Rezone': '', 'Current Zone': '', 'Strategy': '', 'Strategy Link': '', 'Overlays': '', 'Gross HA': '', 'NDH': '', 'Lot Yield @ 15Dw/Ha': '', 'VALUE @ 467m2': '', 'Market Value (20%DM)': '', 'Current RLP': '', 'Current OPC': '', 'Market Value (30%DM)': '', 'Market Value (25%DM)': '', 'Market Value (15%DM)': '', 'Market Value (12%DM)': '', 'Market Value (10%DM)': '', 'OWNERSHIP': '', 'Estate Status': '', 'Developer': '', 'Vendor Company': '', 'Vendor Names': '', 'Vendor Mobiles': '', 'Vendor Emails': '', 'Vendor Addresses': '', 'Major Landowner': '', 'Lead Link': '', });
+lyr_NSABoundaries_7.set('fieldImages', {'id': 'TextEdit', 'NSA': 'TextEdit', 'sum': 'TextEdit', });
+lyr_352OldMandurahRoadRavenswood_8.set('fieldImages', {'fid': '', 'Unique ID': '', 'Lot Plan Identifier': '', '_Suburb': '', 'PARCEL': '', 'Address': '', 'Zoned / Rezone': '', 'Current Zone': '', 'Strategy': '', 'Strategy Link': '', 'Overlays': '', 'Gross HA': '', 'NDH': '', 'Lot Yield @ 15Dw/Ha': '', 'VALUE @ 467m2': '', 'Market Value (20%DM)': '', 'Current RLP': '', 'Current OPC': '', 'Market Value (30%DM)': '', 'Market Value (25%DM)': '', 'Market Value (15%DM)': '', 'Market Value (12%DM)': '', 'Market Value (10%DM)': '', 'OWNERSHIP': '', 'Estate Status': '', 'Developer': '', 'Vendor Company': '', 'Vendor Names': '', 'Vendor Mobiles': '', 'Vendor Emails': '', 'Vendor Addresses': '', 'Major Landowner': '', 'Lead Link': '', });
 lyr_RegionalOpenSpace_4.set('fieldLabels', {'id': 'no label', });
 lyr_OpenSpace_5.set('fieldLabels', {'id': 'no label', });
 lyr_NSABoundaries_6.set('fieldLabels', {'fid': 'no label', 'id': 'no label', 'NSA': 'no label', 'sum': 'no label', });
-lyr_352easement_7.set('fieldLabels', {'id': 'no label', });
-lyr_PlanningFrameworkLanduse_8.set('fieldLabels', {'Land Use': 'hidden field', });
-lyr_352OldMandurahRoadRavenswood_9.set('fieldLabels', {'fid': 'hidden field', 'Unique ID': 'hidden field', 'Lot Plan Identifier': 'hidden field', '_Suburb': 'hidden field', 'PARCEL': 'header label - always visible', 'Address': 'inline label - always visible', 'Zoned / Rezone': 'inline label - always visible', 'Current Zone': 'inline label - always visible', 'Strategy': 'inline label - always visible', 'Strategy Link': 'inline label - always visible', 'Overlays': 'inline label - always visible', 'Gross HA': 'inline label - always visible', 'NDH': 'inline label - always visible', 'Lot Yield @ 15Dw/Ha': 'hidden field', 'VALUE @ 467m2': 'hidden field', 'Market Value (20%DM)': 'hidden field', 'Current RLP': 'hidden field', 'Current OPC': 'hidden field', 'Market Value (30%DM)': 'hidden field', 'Market Value (25%DM)': 'hidden field', 'Market Value (15%DM)': 'hidden field', 'Market Value (12%DM)': 'hidden field', 'Market Value (10%DM)': 'hidden field', 'OWNERSHIP': 'hidden field', 'Estate Status': 'hidden field', 'Developer': 'hidden field', 'Vendor Company': 'hidden field', 'Vendor Names': 'hidden field', 'Vendor Mobiles': 'hidden field', 'Vendor Emails': 'hidden field', 'Vendor Addresses': 'hidden field', 'Major Landowner': 'hidden field', 'Lead Link': 'hidden field', });
-lyr_352OldMandurahRoadRavenswood_9.on('precompose', function(evt) {
+lyr_NSABoundaries_7.set('fieldLabels', {'id': 'no label', 'NSA': 'no label', 'sum': 'no label', });
+lyr_352OldMandurahRoadRavenswood_8.set('fieldLabels', {'fid': 'hidden field', 'Unique ID': 'hidden field', 'Lot Plan Identifier': 'hidden field', '_Suburb': 'hidden field', 'PARCEL': 'header label - always visible', 'Address': 'inline label - always visible', 'Zoned / Rezone': 'inline label - always visible', 'Current Zone': 'inline label - always visible', 'Strategy': 'inline label - always visible', 'Strategy Link': 'inline label - always visible', 'Overlays': 'inline label - always visible', 'Gross HA': 'inline label - always visible', 'NDH': 'inline label - always visible', 'Lot Yield @ 15Dw/Ha': 'hidden field', 'VALUE @ 467m2': 'hidden field', 'Market Value (20%DM)': 'hidden field', 'Current RLP': 'hidden field', 'Current OPC': 'hidden field', 'Market Value (30%DM)': 'hidden field', 'Market Value (25%DM)': 'hidden field', 'Market Value (15%DM)': 'hidden field', 'Market Value (12%DM)': 'hidden field', 'Market Value (10%DM)': 'hidden field', 'OWNERSHIP': 'hidden field', 'Estate Status': 'hidden field', 'Developer': 'hidden field', 'Vendor Company': 'hidden field', 'Vendor Names': 'hidden field', 'Vendor Mobiles': 'hidden field', 'Vendor Emails': 'hidden field', 'Vendor Addresses': 'hidden field', 'Major Landowner': 'hidden field', 'Lead Link': 'hidden field', });
+lyr_352OldMandurahRoadRavenswood_8.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
