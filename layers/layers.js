@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:7850").setExtent([391157.416331, 6392993.619313, 394255.753525, 6394830.262495]);
+//ol.proj.get("EPSG:7850").setExtent([391096.016324, 6392981.593418, 394327.655790, 6394897.255989]);
 var wms_layers = [];
 
 
