@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:7850").setExtent([391215.506618, 6393028.737632, 394136.695053, 6394760.369952]);
+//ol.proj.get("EPSG:7850").setExtent([391157.416331, 6392993.619313, 394255.753525, 6394830.262495]);
 var wms_layers = [];
 
 
@@ -171,7 +171,7 @@ var group_BaseLayer = new ol.layer.Group({
                                 fold: "open",
                                 title: 'Base Layer'});
 
-lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_352OldMandurahRoad_2.setVisible(true);lyr_ConceptPlan_3.setVisible(true);lyr_RegionalOpenSpace_4.setVisible(true);lyr_OpenSpace_5.setVisible(true);lyr_NSABoundaries_6.setVisible(true);lyr_352easement_7.setVisible(false);lyr_PlanningFrameworkLanduse_8.setVisible(false);lyr_352OldMandurahRoadRavenswood_9.setVisible(true);
+lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_352OldMandurahRoad_2.setVisible(true);lyr_ConceptPlan_3.setVisible(true);lyr_RegionalOpenSpace_4.setVisible(false);lyr_OpenSpace_5.setVisible(false);lyr_NSABoundaries_6.setVisible(false);lyr_352easement_7.setVisible(false);lyr_PlanningFrameworkLanduse_8.setVisible(false);lyr_352OldMandurahRoadRavenswood_9.setVisible(true);
 var layersList = [group_BaseLayer,group_ConceptPlan,group_ConceptPlanOptions,group_Easements,group_Zoning,group_Propertry];
 lyr_RegionalOpenSpace_4.set('fieldAliases', {'id': 'id', });
 lyr_OpenSpace_5.set('fieldAliases', {'id': 'id', });
