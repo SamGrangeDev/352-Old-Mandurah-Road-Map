@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_PlanningFrameworkLanduse_3(feature, value, size, resolution, labelText,
+function categories_PlanningFrameworkLanduse_8(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -37,7 +37,7 @@ case 'Urban Deferred':
     })];
                     break;}};
 
-var style_PlanningFrameworkLanduse_3 = function(feature, resolution){
+var style_PlanningFrameworkLanduse_8 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -56,7 +56,7 @@ var style_PlanningFrameworkLanduse_3 = function(feature, resolution){
         labelText = String("");
     }
     
-    var style = categories_PlanningFrameworkLanduse_3(feature, value, size, resolution, labelText,
+    var style = categories_PlanningFrameworkLanduse_8(feature, value, size, resolution, labelText,
                             labelFont, labelFill, bufferColor,
                             bufferWidth, placement);
 
